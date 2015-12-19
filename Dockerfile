@@ -1,7 +1,7 @@
 FROM centos:centos7
 
-RUN apt-get update
-RUN apt-get install -y -qq git python-pip
+RUN yum install -y epel-release
+RUN yum install -y git python-pip
 RUN pip install shutit
 
 WORKDIR /opt
