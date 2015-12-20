@@ -128,7 +128,7 @@ def module():
 		return template(
 				'shutit.tk.airflow.airflow', 7829140920.0001,
 				description='',
-				delivery_methods=[('docker','dockerfile')],
+				delivery_methods=['docker','dockerfile'],
 				maintainer='ian.miell@gmail.com',
 				depends=['shutit.tk.setup']
 		)
